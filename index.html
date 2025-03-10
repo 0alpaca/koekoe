@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダムボイス再生</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ランダムボイス再生</h1>
+        <div class="checkboxes">
+            <label><input type="checkbox" value="/img/male3.png"> 男</label>
+            <label><input type="checkbox" value="/img/female3.png"> 女</label>
+            <label><input type="checkbox" value="/img/couple3.png"> カップル</label>
+        </div>
+        <button id="randomButton" disabled>ランダム</button>
+        <audio controls id="audioPlayer">
+            <source id="audioSource" src="" type="audio/mpeg">
+            お使いのブラウザはオーディオ要素をサポートしていません。
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
