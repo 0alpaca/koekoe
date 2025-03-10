@@ -1,3 +1,4 @@
+console.log('a');
 document.addEventListener('DOMContentLoaded', () => {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     const randomButton = document.getElementById('randomButton');
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, 'text/html');
             const imgSrc = doc.querySelector("#text > div.icon.addition > img")?.src;
-            
+
             if (selectedValues.includes(imgSrc)) {
                 const audioSrc = doc.querySelector("#voice-inner > p > audio > source")?.src;
                 if (audioSrc) {
