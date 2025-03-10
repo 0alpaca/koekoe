@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         while (true) {
             const randomId = Math.floor(Math.random() * 617414) + 1;
-            const response = await fetch(`https://koe-koe.com/detail.php?n=${randomId}`);
+            const response = await fetch(`https://cors-anywhere.herokuapp.com/https://koe-koe.com/detail.php?n=${randomId}`);
             if (response.status === 404) continue;
 
             const html = await response.text();
